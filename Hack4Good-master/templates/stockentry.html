@@ -1,0 +1,79 @@
+<!Doctype html>
+<head>
+    <meta charset="UTF-8">
+        <meta name="description" content="K.C. College of Engineering (KCCOE) is a private engineering college located in Thane, Mumbai, Maharashtra, India. The college is affiliated to the University of Mumbai and approved by Directorate of Technical Education (DTE), Maharashtra State and All India Council of Technical Education (AICTE), New Delhi. KCCOE offers undergraduate courses of study in engineering. The four year undergraduate programme leads to the degree of Bachelor of Engineering (BE).">
+        <meta name="keywords" content="K.C. College, kccoe, kc college of engineering,kc college thane, kc engineering college, kc moodle">
+        <meta name="author" content="Viraj Dalvi">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</head>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">GST</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/logout/">logout <span class="sr-only">(current)</span></a>
+        </li>
+       
+      </ul>
+      
+    </div>
+  </nav>
+  <h1>
+    <center>
+      STOCK ENTRY
+    </center>
+  </h1>
+  <form class="form-horizontal" method="post" action="/submit/">
+    {% csrf_token %}
+    <div class="form-group">
+      <label class="control-label col-sm-2">Vendor Name:</label>
+      <div class="col-sm-10">
+        <input name="vendor_name" type="text" class="form-control">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2">Product Name:</label>
+      <div class="col-sm-10">
+        <input name="product_name" type="text" class="form-control">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2">Category:</label>
+      <div class="col-sm-10">
+        <input name="category" type="text" class="form-control">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2">Quantity:</label>
+      <div class="col-sm-10">
+        <input name="quantity" type="number" class="form-control">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" >Rate in ₹:</label>
+      <div class="col-sm-10">
+        <input name="rate" type="text" class="form-control">
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-10">
+        <center>
+          <button type="submit" class="btn btn-default">Submit</button>
+        </center>
+      </div>
+    </div>
+
+
+
+
+  </form>

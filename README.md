@@ -14,4 +14,5 @@ Fist of all the user will register himself then the user will be directed to the
 4)Invoice Maker: Where a ready made bill is calculated for the products entered by you and the same can be downloaded in the form of a pdf
 
 The dashboard also contains notes and calculator for the user to make temporary notes and calculation 
-Video Link: https://drive.google.com/open?id=1SZQApBEcGtO0_sALe_43QFNS9x8Ldlwp
+Video Link:https://drive.google.com/open?id=1CHCR6QurM_OAKeBGBaMmncW3hzZEg5td
+
